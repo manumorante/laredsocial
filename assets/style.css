@@ -1,0 +1,1070 @@
+/* @override http://www.laredsocial.org/wp-content/themes/laredsocial/style.css */
+
+/*
+Theme Name: La Red Social
+Theme URI: http://www.estadologico.com/
+Description: 
+Version: 2.0
+Author: Manuel Morante
+Author URI: http://www.unavezfui.com/
+*/
+
+/* Lets Begin With Some Basics */
+
+* {
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #565050;
+  font: 13px/1.2em "Lucida Grande", Verdana, Arial, Sans-Serif;
+  background-color: #f6f6f7;
+}
+
+.container {
+  display: block;
+  margin: 10px auto 0;
+  width: 990px;
+  z-index: 3;
+  position: relative;
+}
+
+.bg {
+  /*display: block;*/
+  display: none;
+  width: 100%;
+  height: 397px;
+  background-color: #5571b9;
+  position: absolute;
+  top: 129px;
+}
+.admin-bar .bg {
+  top: 157px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lucida Grande", Verdana, Arial, Sans-Serif;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h2.pagetitle {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+acronym,
+abbr,
+span.caps {
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+}
+
+a:link,
+a:visited {
+  color: #5588bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #565050;
+  text-decoration: underline;
+}
+
+.clear {
+  clear: both;
+}
+
+p img {
+  padding: 0;
+  max-width: 100%;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignright {
+  padding: 4px;
+  margin: 0 0 2px 7px;
+  display: inline;
+}
+
+img.alignleft {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  display: inline;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+/* And... Moving On */
+
+/* Begin Header */
+#header {
+  width: 100%;
+  margin: 30px auto;
+  height: 46px;
+}
+
+#headleft {
+  width: 450px;
+  float: left;
+  margin-left: 5px;
+}
+
+#headright {
+  width: 500px;
+  float: right;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+#headright ul {
+  list-style: none;
+  display: none;
+}
+
+#headright li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+#searchwrap {
+  height: 27px;
+  margin: 15px 0 0 0;
+  float: right;
+}
+
+#searchwrap input {
+  vertical-align: middle;
+  background: none;
+  color: #a7a7a7;
+  font-family: arial, helvetica, verdana, sans-serif;
+}
+
+#searchwrap #s {
+  font-size: 14px;
+  padding: 5px;
+  width: 250px;
+  border: 1px solid #ccd6e3;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* End Header */
+
+/* Begin Content Slider */
+
+#thevideo {
+  margin-bottom: 20px;
+  width: 100%;
+  float: left;
+  padding: 0 0 15px 0;
+  height: 370px;
+}
+#thevideo .video {
+  display: block;
+  float: left;
+  width: 685px;
+  background-color: black;
+}
+#thevideo #videopanel {
+  float: right;
+  width: 300px;
+  overflow: hidden;
+}
+#videopanel #suscribirse {
+  height: 33px;
+  width: 300px;
+}
+#banner728x90header {
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner300x250 {
+  margin-bottom: 10px;
+  padding: 0px;
+  height: 250px;
+  width: 300px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.watchnow {
+  position: absolute;
+  top: 250px;
+  left: 560px;
+  width: 180px;
+  height: 29px;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/watchnow.jpg)
+    top left no-repeat;
+  cursor: pointer;
+}
+
+.watchnow:hover {
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/watchnowover.jpg)
+    top left no-repeat;
+}
+
+/* @group Iconos sociales */
+.social-buttons {
+  display: block;
+  float: left;
+  height: 23px;
+  width: 639px;
+  padding: 6px 3px 6px 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d6d6d6;
+}
+.social-buttons .sb-item {
+  min-width: 60px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  overflow: hidden;
+}
+.social-buttons .sb-twitter {
+  margin-top: 2px;
+}
+
+/* @end */
+
+/* Comentarios recientes */
+ul#recentcomments {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+ul#recentcomments li {
+  display: block;
+  float: left;
+  border-bottom: 1px solid silver;
+  width: 280px;
+  padding: 8px 10px;
+}
+ul#recentcomments li a {
+  border: none;
+}
+
+.insert {
+  width: 180px;
+  height: 350px;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/insertbg.png)
+    top left no-repeat;
+  margin: 0 0 0 550px;
+  color: #ffffff;
+  padding: 10px;
+  line-height: 1.2em;
+}
+
+.insert h2 {
+  line-height: 1em;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.insert a:link,
+.insert a:hover,
+.insert a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* End Content Slider */
+
+/* Begin Entry Lists */
+html > body .entry ul {
+  margin-left: 0px;
+  padding: 0 0 0 30px;
+  list-style: none;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+
+html > body .entry li {
+  margin: 7px 0 8px 10px;
+}
+
+.entry ul li:before,
+#sidebar ul ul li:before {
+  content: "\00BB \0020";
+}
+
+.entry ol {
+  padding: 0 0 0 35px;
+  margin: 0;
+}
+
+.entry ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.postmetadata ul,
+.postmetadata li {
+  display: inline;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+#sidebar ul,
+#sidebar ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul p,
+#sidebar ul select {
+  margin: 5px 0 8px;
+}
+
+#sidebar ul ul,
+#sidebar ul ol {
+  margin: 5px 0 0 10px;
+}
+
+#sidebar ul ul ul,
+#sidebar ul ol {
+  margin: 0 0 0 10px;
+}
+
+ol li,
+#sidebar ul ol li {
+  list-style: decimal outside;
+}
+
+#sidebar ul ul li,
+#sidebar ul ol li {
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+/* End Entry Lists */
+
+/* Begin Main Content */
+#contentwrap {
+  width: 990px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#pagewrap {
+  width: 100%;
+}
+#content {
+}
+
+#menubar {
+  display: none;
+  width: 988px;
+  height: 43px;
+  margin-bottom: 15px;
+  border: 1px solid #ccd6e3;
+  background-color: #f3f6f8;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#pagenav {
+  float: left;
+  margin: 0 10px 15px 0;
+  width: 653px;
+  text-align: right;
+}
+/* End Main Content */
+
+ul,
+li {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Begin Categories List */
+#menubar .menu li {
+  display: inline;
+}
+#menubar .menu li a {
+  color: gray;
+  text-decoration: none;
+  display: block;
+  float: left;
+  font-size: 16px;
+  padding: 14px;
+}
+#menubar .menu li a:hover {
+  color: #5572b8;
+  background-color: #e7ecf2;
+}
+#menubar ul .submenu {
+  border-top: none;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/menubg.png)
+    top left repeat;
+  position: relative;
+  width: 235px;
+  padding: 6px 0;
+  clear: both;
+  z-index: 2;
+  display: none;
+}
+#menubar ul .submenu li {
+  background: none;
+  display: block;
+  float: none;
+  margin: 0 6px;
+  border: 0;
+  height: auto;
+  line-height: normal;
+  border-top: solid 1px #b6b6b6;
+}
+#menubar .submenu li a {
+  background: none;
+  display: block;
+  float: none;
+  padding: 6px 11px;
+  margin: 0;
+  border: 0;
+  height: auto;
+  line-height: normal;
+}
+#menubar .submenu li a:hover {
+}
+/* End Categories List */
+
+/* Begin Video Gallery */
+.post-items-grid {
+  width: 1028px;
+  float: left;
+}
+
+/* Slider home */
+.slider-home {
+  display: block;
+  width: 970px;
+  overflow: scroll;
+  height: 237px;
+  background-color: #e7ecf2;
+  padding: 10px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.slider-home .inner {
+  display: block;
+  width: 2016px;
+  float: left;
+}
+.slider-home .inner .post-item a {
+  margin-bottom: 0;
+}
+
+/* @group Pagina detalle single */
+.single-blog-content,
+.single-content {
+  width: 648px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 5px;
+}
+/* @end */
+
+#bloglist {
+  width: 670px;
+  float: left;
+  margin: 10px 0 10px 0;
+}
+
+/* @group Item post */
+.post-item {
+  display: block;
+  float: left;
+}
+
+.post-item a {
+  width: 219px;
+  height: 220px;
+  float: left;
+  margin: 0 17px 30px 0;
+  padding: 7px;
+  color: #9c9c9c;
+  background-color: white;
+  border: 1px solid #e7ecf2;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.post-item a:hover {
+  color: #5588ba;
+  box-shadow: 0 0 20px #ccc;
+  border: 1px solid rgba(86, 113, 184, 0.27);
+}
+.post-item a .thumbnail {
+  width: 220px;
+  height: 130px;
+  background-color: #e7ecf2;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+.post-item a .thumbnail img {
+  width: 220px;
+  height: auto;
+}
+.post-item a .post-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  float: left;
+  line-height: 19px;
+  margin: 0 0 6px 5px;
+}
+/* @end */
+
+.gallerydate {
+  color: #999191;
+  width: 205px;
+  float: left;
+  margin: 0 0 0 -5px;
+}
+
+.wrap-post-content {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#postcontent {
+  float: left;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#postcontent h2 {
+  font-size: 15px;
+  margin-top: 0;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.single-blog-content #postcontent {
+  width: 652px;
+  float: left;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Entradas relacionadas */
+ul#related_posts_thumbnails {
+  padding: 0;
+  margin: 0 0 15px;
+  display: block;
+  width: 100%;
+  height: 208px;
+}
+ul#related_posts_thumbnails li {
+  padding: 0 10px 0 0;
+  float: left;
+  width: 90px;
+  border-right: 1px solid #dddddd;
+  margin-right: 10px;
+}
+ul#related_posts_thumbnails li a {
+  font-size: 13px;
+  line-height: 16px;
+}
+ul#related_posts_thumbnails li a img {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+}
+ul#related_posts_thumbnails li:last-child {
+  border: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* @group Sidebars */
+
+/* @group Widget */
+.sidebar {
+  display: block;
+  width: 300px;
+  border-radius: 5px;
+  padding: 0;
+  float: left;
+}
+.sidebar-single {
+  top: 561px;
+}
+.sidebar .widget {
+  display: block;
+  float: left;
+  background-color: white;
+  width: 300px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+
+.sidebar .widget h3 {
+  margin: 0;
+  padding: 6px 6px 6px 9px;
+  font-size: 14px;
+}
+
+.sidebar .widget ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .widget ul li a {
+  display: block;
+  border-bottom: 1px solid #fffeff;
+  padding: 7px 10px;
+  border-top: 1px solid silver;
+}
+
+.sidebar .widget ul li a:hover {
+  background-color: #fafafa;
+  color: #f77c1f;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  border-color: #f77c1f;
+}
+/* @end */
+
+/* @end */
+
+/* @group Comentarios */
+#postcomments {
+  width: 613px;
+  float: left;
+  background-color: #ecedec;
+  padding: 20px;
+  border-radius: 5px;
+}
+#postcomments h3 {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+#postcomments .btn-submit-comment {
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+#postcomments .text-comment {
+  margin-bottom: 15px;
+}
+#postcomments .name-comment {
+  margin-bottom: 5px;
+}
+#postcomments .email-comment {
+  margin-bottom: 5px;
+}
+#postcomments .url-comment {
+  display: none;
+}
+p.subscribe-to-comments {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+}
+/* @end */
+
+.itemlinks {
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.itemlinks a:link,
+.itemlinks a:visited {
+  color: #565050;
+}
+
+.smalllinks a:link,
+.smalllinks a:visited {
+  color: #999191;
+}
+
+.smalllinks {
+  color: #999191;
+}
+
+/* @group Titulo single */
+.page-title h2 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.page-title h2 a,
+.page-title h2 a:hover {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -3px;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+  color: #58b;
+  text-decoration: none;
+}
+/* @end */
+
+#singlethumb {
+  width: 190px;
+  float: left;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/singlethumb.jpg)
+    top left no-repeat;
+  padding: 9px 10px 10px 10px;
+  display: none;
+  margin-right: 10px;
+}
+
+#singlethumbnail {
+  float: right;
+  margin: 0;
+  width: 190px;
+  height: 120px;
+  padding: 0px;
+  overflow: hidden;
+}
+/* End Video Gallery */
+
+/* Begin Blog and Page Items */
+.blogitem {
+  width: 653px;
+  float: left;
+  margin: 10px 0 10px 0;
+  padding: 0 0 10px 0;
+}
+
+.pageitem {
+  width: 653px;
+  float: left;
+  margin: 10px 0 10px 0;
+}
+
+.blogcontent {
+  width: 653px;
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+.blogitem h2,
+.pageitem h2 {
+  font-size: 29px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 5px 0;
+  line-height: 29px;
+}
+/* End Blog and Page Items */
+
+/* Begin Sidebar */
+#sidebar {
+  width: 310px;
+  float: left;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+#sidebar h3 {
+  margin: 10px 0 0 8px;
+  padding: 0;
+  font-size: 14px;
+}
+
+#sidebar h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.blockhead {
+  width: 310px;
+  height: 33px;
+  float: left;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/blockhead.jpg)
+    top left no-repeat;
+}
+
+.block {
+  width: 294px;
+  float: left;
+  background: url(/web/20171024114934im_/http://www.laredsocial.org/wp-content/themes/laredsocial/images/blockbg.jpg)
+    bottom left no-repeat;
+  padding: 8px;
+  margin: 0 0 10px 0;
+}
+
+.sideblog {
+  margin: 0 0 8px 0;
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* End Sidebar */
+
+/* Begin Comments*/
+#comment {
+  width: 450px;
+  border-style: none;
+}
+
+h2.commh2 {
+  font-size: 1.4em !important;
+  padding: 0 0 5px;
+  color: #333 !important;
+}
+
+ol.commentlist {
+  margin: 10px 0 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+ol.commentlist p {
+  margin-bottom: 10px;
+}
+
+ol.commentlist cite {
+  font-style: normal;
+  font-weight: bold;
+}
+
+ol.commentlist li {
+  padding: 0;
+  background: #FFFFF;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid #dfdfdf;
+  list-style: none;
+}
+ol.commentlist li .avatar {
+  display: block;
+  float: right;
+}
+ol.commentlist li.alt {
+  padding: 0 !important;
+  background: #FFFFF;
+  margin: 0 0 15px 0;
+}
+
+input#submit {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #212121;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 9px 12px 8px;
+  margin: 10px 0;
+}
+
+#comment,
+#author,
+#email,
+#url {
+  background: #ffffff;
+  border: 1px none #b8b8b8;
+  padding: 5px;
+  color: #646464;
+  margin: 0px 0 0 0;
+}
+/* End Comments */
+
+/* Begin Sidebar */
+
+/* End Sidebar */
+
+/* Begin Various Tags and Classes */
+acronym,
+abbr,
+span.caps {
+  cursor: help;
+}
+
+acronym,
+abbr {
+  border-bottom: 1px dashed #999;
+}
+
+blockquote {
+  margin: 15px 30px 0 10px;
+  padding-left: 20px;
+  border-left: 5px solid #ddd;
+}
+
+blockquote cite {
+  margin: 5px 0 0;
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+hr {
+  display: none;
+}
+a img {
+  border: none;
+}
+/* End Various Tags and Classes*/
+
+/* Begin Captions */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 4px;
+  margin: 10px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+/* End Captions */
+
+/* Begin Footer */
+#footer {
+  width: 100%;
+  clear: both;
+  display: block;
+  float: left;
+  padding: 40px;
+  text-align: center;
+  background-color: #5771b9;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#footer a:link,
+#footer a:visited {
+  color: #565050;
+}
+
+#footer small {
+  color: #999191;
+}
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.recentcomments a {
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*
+     FILE ARCHIVED ON 11:49:34 Oct 24, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:28:27 Mar 28, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 173.143
+  exclusion.robots.policy: 0.322
+  LoadShardBlock: 145.326 (3)
+  RedisCDXSource: 3.163
+  CDXLines.iter: 19.409 (3)
+  PetaboxLoader3.resolve: 220.61 (2)
+  exclusion.robots: 0.346
+  PetaboxLoader3.datanode: 71.683 (4)
+  esindex: 0.02
+  load_resource: 208.528
+*/
